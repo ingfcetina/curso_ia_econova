@@ -1,0 +1,160 @@
+# Plantilla de Análisis de Competencia - Claude
+
+## Hoja 1: Identificación de Competidores
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Nombre | Empresa | "Hotel XYZ" | "Analiza la competencia [NOMBRE] y extrae: fortalezas, debilidades, estrategias y posicionamiento." |
+| Tipo | Categoría | "Directo" | "Clasifica al competidor [NOMBRE] según su tipo y nivel de competencia." |
+| Mercado | Segmento | "Lujo" | "Evalúa la participación de [NOMBRE] en el segmento [MERCADO]." |
+| Ubicación | Zona | "Centro" | "Analiza la cobertura geográfica de [NOMBRE]." |
+| Tamaño | Escala | "Mediano" | "Evalúa la escala operativa de [NOMBRE]." |
+
+## Hoja 2: Análisis de Oferta
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Productos | Servicios | "Habitaciones" | "Analiza la oferta de productos de [NOMBRE]." |
+| Precios | Estrategia | "Premium" | "Evalúa la estrategia de precios de [NOMBRE]." |
+| Calidad | Nivel | "Alta" | "Analiza los estándares de calidad de [NOMBRE]." |
+| Diferenciación | Elementos | "Servicio" | "Identifica elementos diferenciadores de [NOMBRE]." |
+| Innovación | Nivel | "Alto" | "Evalúa el nivel de innovación de [NOMBRE]." |
+
+## Hoja 3: Análisis de Mercado
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Cuota | Mercado | "15%" | "Calcula la cuota de mercado de [NOMBRE]." |
+| Crecimiento | Tasa | "5%" | "Analiza la tasa de crecimiento de [NOMBRE]." |
+| Tendencias | Dirección | "Ascendente" | "Identifica tendencias de mercado para [NOMBRE]." |
+| Clientes | Perfil | "Ejecutivos" | "Analiza el perfil de clientes de [NOMBRE]." |
+| Canales | Distribución | "Online" | "Evalúa los canales de distribución de [NOMBRE]." |
+
+## Hoja 4: Análisis de Marketing
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Mensaje | Comunicación | "Lujo" | "Analiza el mensaje de marketing de [NOMBRE]." |
+| Canales | Medios | "Digital" | "Evalúa los canales de marketing de [NOMBRE]." |
+| Presencia | Online | "Alta" | "Analiza la presencia digital de [NOMBRE]." |
+| Reputación | Nivel | "Excelente" | "Evalúa la reputación de [NOMBRE]." |
+| Engagement | Nivel | "Alto" | "Analiza el engagement de [NOMBRE]." |
+
+## Hoja 5: Instrucciones
+1. Identificar competidores
+2. Analizar oferta
+3. Evaluar mercado
+4. Revisar marketing
+5. Generar insights
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Cuota | Mercado | Ventas propias / Ventas totales | >20% |
+| Crecimiento | Tasa | (Actual - Anterior) / Anterior | >10% |
+| Posicionamiento | Ranking | Posición en mercado | Top 3 |
+| Satisfacción | Cliente | Promedio reseñas | >4.5 |
+| Eficiencia | Operativa | Ingresos / Costos | >2.0 |
+
+## Hoja 7: Plantillas de Prompt
+1. Análisis Competitivo:
+   ```
+   Analiza al competidor [NOMBRE]:
+   - Fortalezas y debilidades
+   - Estrategia de mercado
+   - Posicionamiento
+   - Diferenciadores
+   - Amenazas y oportunidades
+   Área: [AREA]
+   Período: [PERIODO]
+   ```
+
+2. Análisis de Mercado:
+   ```
+   Evalúa el mercado para [NOMBRE]:
+   - Tamaño y crecimiento
+   - Segmentación
+   - Tendencias
+   - Barreras de entrada
+   - Oportunidades
+   Segmento: [SEGMENTO]
+   Región: [REGION]
+   ```
+
+3. Análisis de Marketing:
+   ```
+   Analiza la estrategia de marketing de [NOMBRE]:
+   - Mensaje y posicionamiento
+   - Canales y medios
+   - Presencia digital
+   - Engagement
+   - Efectividad
+   Campaña: [CAMPAÑA]
+   Período: [PERIODO]
+   ```
+
+4. Plan Estratégico:
+   ```
+   Genera recomendaciones estratégicas:
+   - Análisis competitivo
+   - Oportunidades de mercado
+   - Estrategias de diferenciación
+   - Plan de acción
+   - Métricas de éxito
+   Objetivo: [OBJETIVO]
+   Horizonte: [TIEMPO]
+   ```
+
+## Hoja 8: Registro de Análisis
+| Fecha | Competidor | Área | Hallazgos | Acciones |
+|-------|------------|------|-----------|----------|
+| [FECHA] | [NOMBRE] | Mercado | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | [NOMBRE] | Marketing | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | [NOMBRE] | Operaciones | [HALLAZGOS] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Recopilación:
+   - Usar múltiples fuentes
+   - Mantener actualización
+   - Validar datos
+   - Documentar fuentes
+
+2. Análisis:
+   - Ser objetivo
+   - Considerar contexto
+   - Identificar patrones
+   - Validar conclusiones
+
+3. Estrategia:
+   - Definir objetivos
+   - Priorizar acciones
+   - Asignar recursos
+   - Establecer plazos
+
+4. Seguimiento:
+   - Monitorear cambios
+   - Ajustar estrategia
+   - Medir resultados
+   - Actualizar análisis
+
+## Hoja 10: Recursos
+1. Fuentes:
+   - Informes de mercado
+   - Sitios web
+   - Redes sociales
+   - Reseñas
+   - Publicaciones
+
+2. Herramientas:
+   - Analizadores web
+   - Trackers de precios
+   - Monitores de redes
+   - Herramientas SEO
+
+3. Plantillas:
+   - Formatos de análisis
+   - Reportes
+   - Planes estratégicos
+   - Seguimiento
+
+4. Contactos:
+   - Equipo de análisis
+   - Consultores
+   - Stakeholders
+   - Proveedores 

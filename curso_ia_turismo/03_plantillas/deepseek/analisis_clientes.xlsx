@@ -1,0 +1,167 @@
+# Plantilla de Análisis de Clientes - DeepSeek
+
+## Hoja 1: Base de Datos de Clientes
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| ID Cliente | Identificador | "CLI001" | "SELECT * FROM clientes WHERE id = [ID]" |
+| Segmento | Categoría | "Premium" | "SELECT segmento, COUNT(*) FROM clientes GROUP BY segmento" |
+| Edad | Rango | "35-45" | "SELECT edad, COUNT(*) FROM clientes GROUP BY edad" |
+| Origen | País/Región | "España" | "SELECT origen, COUNT(*) FROM clientes GROUP BY origen" |
+| Valor | LTV | "5000€" | "SELECT AVG(valor_total) FROM clientes WHERE segmento = [SEGMENTO]" |
+
+## Hoja 2: Segmentación
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Criterio | Base | "Valor" | "SELECT criterio, COUNT(*) FROM segmentacion GROUP BY criterio" |
+| Grupo | Clasificación | "A" | "SELECT grupo, AVG(valor) FROM clientes GROUP BY grupo" |
+| Características | Atributos | "Frecuente" | "SELECT caracteristica, COUNT(*) FROM clientes GROUP BY caracteristica" |
+| Tamaño | Número | "1000" | "SELECT COUNT(*) FROM clientes WHERE segmento = [SEGMENTO]" |
+| Valor | Monetario | "10000€" | "SELECT SUM(valor) FROM clientes WHERE segmento = [SEGMENTO]" |
+
+## Hoja 3: Comportamiento
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Frecuencia | Visitas | "3/año" | "SELECT AVG(frecuencia) FROM clientes WHERE segmento = [SEGMENTO]" |
+| Última Compra | Fecha | "2024-02" | "SELECT MAX(fecha) FROM ventas WHERE cliente_id = [ID]" |
+| Producto | Preferido | "Europa" | "SELECT producto, COUNT(*) FROM ventas GROUP BY producto" |
+| Canal | Preferido | "Web" | "SELECT canal, COUNT(*) FROM ventes GROUP BY canal" |
+| Valor | Medio | "1500€" | "SELECT AVG(valor) FROM ventas WHERE cliente_id = [ID]" |
+
+## Hoja 4: Métricas de Retención
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Tasa | Retención | "85%" | "SELECT COUNT(retenidos)/COUNT(*) FROM clientes" |
+| Churn | Pérdida | "15%" | "SELECT COUNT(churn)/COUNT(*) FROM clientes" |
+| Reactivación | Tasa | "20%" | "SELECT COUNT(reactivados)/COUNT(inactivos) FROM clientes" |
+| Fidelidad | Índice | "4.5/5" | "SELECT AVG(fidelidad) FROM clientes WHERE segmento = [SEGMENTO]" |
+| Satisfacción | NPS | "75" | "SELECT AVG(nps) FROM clientes WHERE segmento = [SEGMENTO]" |
+
+## Hoja 5: Instrucciones
+1. Cargar datos de clientes
+2. Validar información
+3. Ejecutar análisis
+4. Generar segmentación
+5. Interpretar resultados
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| LTV | Valor del cliente | Suma compras / Tiempo | >5000€ |
+| CAC | Costo de adquisición | Costos marketing / Nuevos clientes | <500€ |
+| Churn | Tasa de abandono | Clientes perdidos / Total | <10% |
+| NPS | Net Promoter Score | Promotores - Detractores | >50 |
+| ROI | Retorno inversión | (LTV - CAC) / CAC | >300% |
+
+## Hoja 7: Consultas Avanzadas
+1. Análisis de Segmentación:
+   ```sql
+   SELECT 
+       segmento,
+       COUNT(*) as total_clientes,
+       AVG(valor_total) as valor_medio,
+       AVG(frecuencia) as frecuencia_media,
+       AVG(nps) as satisfaccion_media
+   FROM clientes
+   GROUP BY segmento
+   ORDER BY valor_medio DESC
+   ```
+
+2. Análisis de Comportamiento:
+   ```sql
+   SELECT 
+       cliente_id,
+       COUNT(*) as numero_compras,
+       AVG(valor) as ticket_medio,
+       MAX(fecha) as ultima_compra,
+       SUM(valor) as valor_total
+   FROM ventas
+   WHERE fecha >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+   GROUP BY cliente_id
+   ORDER BY valor_total DESC
+   ```
+
+3. Análisis de Retención:
+   ```sql
+   SELECT 
+       mes,
+       COUNT(DISTINCT cliente_id) as clientes_activos,
+       COUNT(DISTINCT CASE WHEN fecha >= DATE_SUB(NOW(), INTERVAL 1 MONTH) 
+           THEN cliente_id END) as clientes_retenidos,
+       COUNT(DISTINCT CASE WHEN fecha >= DATE_SUB(NOW(), INTERVAL 1 MONTH) 
+           THEN cliente_id END) / COUNT(DISTINCT cliente_id) as tasa_retencion
+   FROM ventas
+   GROUP BY mes
+   ORDER BY mes DESC
+   ```
+
+4. Análisis de Valor:
+   ```sql
+   SELECT 
+       segmento,
+       AVG(valor_total) as ltv_medio,
+       AVG(cac) as cac_medio,
+       (AVG(valor_total) - AVG(cac)) / AVG(cac) as roi_medio,
+       COUNT(*) as total_clientes
+   FROM clientes
+   GROUP BY segmento
+   ORDER BY ltv_medio DESC
+   ```
+
+## Hoja 8: Registro de Análisis
+| Fecha | Tipo | Alcance | Hallazgos | Acciones |
+|-------|------|---------|-----------|----------|
+| [FECHA] | Mensual | Segmentación | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Trimestral | Comportamiento | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Anual | Retención | [HALLAZGOS] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Recopilación de Datos:
+   - Validar fuentes
+   - Limpiar datos
+   - Normalizar formatos
+   - Documentar procesos
+
+2. Análisis:
+   - Usar métricas relevantes
+   - Validar resultados
+   - Considerar contexto
+   - Documentar hallazgos
+
+3. Segmentación:
+   - Definir criterios claros
+   - Validar grupos
+   - Actualizar periódicamente
+   - Medir efectividad
+
+4. Implementación:
+   - Automatizar análisis
+   - Programar actualizaciones
+   - Validar resultados
+   - Compartir insights
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - CRM
+   - Sistema de ventas
+   - Encuestas
+   - Analytics
+   - Redes sociales
+
+2. Herramientas:
+   - DeepSeek
+   - Excel
+   - Power BI
+   - Tableau
+   - Python/R
+
+3. Plantillas:
+   - Consultas SQL
+   - Gráficos
+   - Dashboards
+   - Reportes
+
+4. Contactos:
+   - Equipo de análisis
+   - Marketing
+   - Ventas
+   - Atención al cliente 

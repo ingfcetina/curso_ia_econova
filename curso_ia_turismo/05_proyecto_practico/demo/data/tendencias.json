@@ -1,0 +1,104 @@
+{
+    "tendencias_mercado": {
+        "periodo": "2024-Q1",
+        "segmentos": {
+            "hoteles": {
+                "crecimiento": 0.15,
+                "tendencia": "ascendente",
+                "factores": [
+                    {
+                        "nombre": "turismo_sostenible",
+                        "impacto": 0.8,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "experiencias_locales",
+                        "impacto": 0.75,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "tecnologia_habitaciones",
+                        "impacto": 0.65,
+                        "tendencia": "estable"
+                    }
+                ]
+            },
+            "restaurantes": {
+                "crecimiento": 0.12,
+                "tendencia": "ascendente",
+                "factores": [
+                    {
+                        "nombre": "cocina_local",
+                        "impacto": 0.85,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "opciones_veganas",
+                        "impacto": 0.70,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "reservas_online",
+                        "impacto": 0.60,
+                        "tendencia": "estable"
+                    }
+                ]
+            },
+            "tours": {
+                "crecimiento": 0.18,
+                "tendencia": "ascendente",
+                "factores": [
+                    {
+                        "nombre": "tours_privados",
+                        "impacto": 0.90,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "experiencias_culturales",
+                        "impacto": 0.80,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "tours_virtuales",
+                        "impacto": 0.55,
+                        "tendencia": "descendente"
+                    }
+                ]
+            },
+            "spa": {
+                "crecimiento": 0.10,
+                "tendencia": "estable",
+                "factores": [
+                    {
+                        "nombre": "bienestar_mental",
+                        "impacto": 0.75,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "tratamientos_naturales",
+                        "impacto": 0.70,
+                        "tendencia": "ascendente"
+                    },
+                    {
+                        "nombre": "paquetes_corporativos",
+                        "impacto": 0.65,
+                        "tendencia": "estable"
+                    }
+                ]
+            }
+        },
+        "indicadores_generales": {
+            "satisfaccion_cliente": 4.5,
+            "tasa_ocupacion": 0.82,
+            "ingresos_promedio": 12500,
+            "tasa_cancelacion": 0.03,
+            "tiempo_respuesta": 16.5
+        },
+        "competencia": {
+            "nuevos_competidores": 3,
+            "tasa_crecimiento_mercado": 0.12,
+            "cuota_mercado": 0.25,
+            "tendencias_precios": "estable"
+        }
+    }
+} 

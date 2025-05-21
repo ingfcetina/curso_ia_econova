@@ -1,0 +1,168 @@
+# Plantilla de Análisis de Ventas - DeepSeek
+
+## Hoja 1: Datos de Ventas
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Fecha | Período de venta | "2024-03" | "SELECT SUM(ventas) FROM ventas WHERE fecha = [FECHA]" |
+| Producto | Servicio/Destino | "Paquete Europa" | "SELECT * FROM ventas WHERE producto = [PRODUCTO]" |
+| Canal | Medio de venta | "Web" | "SELECT canal, SUM(ventas) FROM ventas GROUP BY canal" |
+| Cliente | Segmento | "Premium" | "SELECT segmento, COUNT(*) FROM clientes GROUP BY segmento" |
+| Valor | Monto | "1000€" | "SELECT AVG(valor) FROM ventas WHERE producto = [PRODUCTO]" |
+
+## Hoja 2: Análisis por Destino
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Destino | Lugar | "París" | "SELECT destino, SUM(ventas) FROM ventas GROUP BY destino" |
+| Temporada | Período | "Verano" | "SELECT temporada, AVG(ventas) FROM ventas GROUP BY temporada" |
+| Duración | Días | "7" | "SELECT duracion, COUNT(*) FROM ventas GROUP BY duracion" |
+| Precio | Costo | "1500€" | "SELECT precio, COUNT(*) FROM ventas GROUP BY precio" |
+| Ocupación | Tasa | "85%" | "SELECT ocupacion, AVG(ventas) FROM ventas GROUP BY ocupacion" |
+
+## Hoja 3: Tendencias Temporales
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Período | Rango | "Mensual" | "SELECT periodo, SUM(ventas) FROM ventas GROUP BY periodo" |
+| Crecimiento | Tasa | "15%" | "SELECT (actual - anterior)/anterior FROM ventas" |
+| Estacionalidad | Patrón | "Alta" | "SELECT mes, AVG(ventas) FROM ventas GROUP BY mes" |
+| Previsión | Predicción | "1200€" | "SELECT FORECAST(ventas) FROM ventas WHERE periodo = [PERIODO]" |
+| Variación | Cambio | "+5%" | "SELECT (actual - media)/media FROM ventas" |
+
+## Hoja 4: KPIs Principales
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Ventas Totales | Suma | "50000€" | "SELECT SUM(ventas) FROM ventas WHERE periodo = [PERIODO]" |
+| Ticket Medio | Promedio | "1200€" | "SELECT AVG(ventas) FROM ventas WHERE periodo = [PERIODO]" |
+| Conversión | Tasa | "3%" | "SELECT ventas/visitas FROM metricas WHERE periodo = [PERIODO]" |
+| Margen | Porcentaje | "25%" | "SELECT (ventas - costos)/ventas FROM ventas" |
+| ROI | Retorno | "150%" | "SELECT (beneficio - inversion)/inversion FROM inversiones" |
+
+## Hoja 5: Instrucciones
+1. Cargar datos en formato estructurado
+2. Validar integridad de datos
+3. Ejecutar consultas de análisis
+4. Generar visualizaciones
+5. Interpretar resultados
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Crecimiento | Tasa de crecimiento | (Actual - Anterior) / Anterior | >10% |
+| Eficiencia | Ventas por agente | Ventas / Número de agentes | >50000€ |
+| Rentabilidad | Margen neto | (Ventas - Costos) / Ventas | >20% |
+| Productividad | Ventas por hora | Ventas / Horas trabajadas | >100€ |
+| Satisfacción | NPS | Promotores - Detractores | >50 |
+
+## Hoja 7: Consultas Avanzadas
+1. Análisis de Ventas:
+   ```sql
+   SELECT 
+       fecha,
+       producto,
+       SUM(ventas) as total_ventas,
+       AVG(ventas) as ticket_medio,
+       COUNT(*) as numero_ventas
+   FROM ventas
+   WHERE fecha BETWEEN [FECHA_INICIO] AND [FECHA_FIN]
+   GROUP BY fecha, producto
+   ORDER BY total_ventas DESC
+   ```
+
+2. Análisis de Clientes:
+   ```sql
+   SELECT 
+       segmento,
+       COUNT(*) as total_clientes,
+       AVG(valor_compra) as ticket_medio,
+       SUM(ventas) as total_ventas
+   FROM clientes
+   JOIN ventas ON clientes.id = ventas.cliente_id
+   GROUP BY segmento
+   ORDER BY total_ventas DESC
+   ```
+
+3. Análisis de Productos:
+   ```sql
+   SELECT 
+       producto,
+       temporada,
+       SUM(ventas) as ventas_totales,
+       AVG(precio) as precio_medio,
+       COUNT(*) as unidades_vendidas
+   FROM ventas
+   WHERE fecha BETWEEN [FECHA_INICIO] AND [FECHA_FIN]
+   GROUP BY producto, temporada
+   ORDER BY ventas_totales DESC
+   ```
+
+4. Análisis de Tendencias:
+   ```sql
+   SELECT 
+       DATE_TRUNC('month', fecha) as mes,
+       producto,
+       SUM(ventas) as ventas_mes,
+       LAG(SUM(ventas)) OVER (PARTITION BY producto ORDER BY mes) as ventas_mes_anterior,
+       (SUM(ventas) - LAG(SUM(ventas)) OVER (PARTITION BY producto ORDER BY mes)) / 
+       LAG(SUM(ventas)) OVER (PARTITION BY producto ORDER BY mes) as crecimiento
+   FROM ventas
+   GROUP BY mes, producto
+   ORDER BY mes DESC
+   ```
+
+## Hoja 8: Registro de Análisis
+| Fecha | Tipo | Alcance | Hallazgos | Acciones |
+|-------|------|---------|-----------|----------|
+| [FECHA] | Mensual | Ventas | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Trimestral | Productos | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Anual | Clientes | [HALLAZGOS] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Preparación de Datos:
+   - Validar formato
+   - Limpiar datos
+   - Normalizar valores
+   - Documentar fuentes
+
+2. Análisis:
+   - Usar consultas optimizadas
+   - Validar resultados
+   - Considerar contexto
+   - Documentar hallazgos
+
+3. Visualización:
+   - Seleccionar gráficos apropiados
+   - Mantener consistencia
+   - Incluir contexto
+   - Facilitar interpretación
+
+4. Implementación:
+   - Automatizar consultas
+   - Programar actualizaciones
+   - Validar resultados
+   - Compartir insights
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - Sistema de ventas
+   - CRM
+   - ERP
+   - Analytics
+   - Encuestas
+
+2. Herramientas:
+   - DeepSeek
+   - Excel
+   - Power BI
+   - Tableau
+   - Python/R
+
+3. Plantillas:
+   - Consultas SQL
+   - Gráficos
+   - Dashboards
+   - Reportes
+
+4. Contactos:
+   - Equipo de análisis
+   - IT
+   - Ventas
+   - Marketing 

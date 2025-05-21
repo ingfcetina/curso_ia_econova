@@ -1,0 +1,170 @@
+# Plantilla de Dashboard Operativo - DeepSeek
+
+## Hoja 1: KPIs Operativos
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Eficiencia | Tasa | "85%" | "SELECT AVG(eficiencia) FROM operaciones WHERE fecha = [FECHA]" |
+| Tiempo | Respuesta | "2h" | "SELECT AVG(tiempo_respuesta) FROM operaciones WHERE tipo = [TIPO]" |
+| Calidad | Tasa | "95%" | "SELECT AVG(calidad) FROM operaciones WHERE fecha = [FECHA]" |
+| Costo | Por unidad | "50€" | "SELECT AVG(costo) FROM operaciones WHERE producto = [PRODUCTO]" |
+| Satisfacción | Nivel | "4.5/5" | "SELECT AVG(satisfaccion) FROM operaciones WHERE fecha = [FECHA]" |
+
+## Hoja 2: Análisis de Eficiencia
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Proceso | Nombre | "Reserva" | "SELECT proceso, AVG(eficiencia) FROM operaciones GROUP BY proceso" |
+| Recurso | Tipo | "Humano" | "SELECT recurso, COUNT(*) FROM operaciones GROUP BY recurso" |
+| Tiempo | Duración | "30min" | "SELECT AVG(duracion) FROM operaciones WHERE proceso = [PROCESO]" |
+| Costo | Por proceso | "100€" | "SELECT AVG(costo) FROM operaciones WHERE proceso = [PROCESO]" |
+| Mejora | Potencial | "20%" | "SELECT (max_eficiencia - actual) / actual FROM operaciones" |
+
+## Hoja 3: Gestión de Recursos
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Tipo | Recurso | "Agente" | "SELECT tipo, COUNT(*) FROM recursos GROUP BY tipo" |
+| Disponibilidad | Tasa | "90%" | "SELECT AVG(disponibilidad) FROM recursos WHERE tipo = [TIPO]" |
+| Utilización | Tasa | "75%" | "SELECT AVG(utilizacion) FROM recursos WHERE tipo = [TIPO]" |
+| Costo | Por hora | "25€" | "SELECT AVG(costo_hora) FROM recursos WHERE tipo = [TIPO]" |
+| Productividad | Índice | "1.2" | "SELECT AVG(productividad) FROM recursos WHERE tipo = [TIPO]" |
+
+## Hoja 4: Análisis de Costos
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Categoría | Tipo | "Operativo" | "SELECT categoria, SUM(costo) FROM costos GROUP BY categoria" |
+| Período | Rango | "Mensual" | "SELECT periodo, SUM(costo) FROM costos GROUP BY periodo" |
+| Producto | Servicio | "Paquete" | "SELECT producto, AVG(costo) FROM costos GROUP BY producto" |
+| Tendencia | Cambio | "-5%" | "SELECT (actual - anterior)/anterior FROM costos" |
+| Presupuesto | Límite | "10000€" | "SELECT SUM(presupuesto) FROM costos WHERE periodo = [PERIODO]" |
+
+## Hoja 5: Instrucciones
+1. Cargar datos operativos
+2. Validar métricas
+3. Generar visualizaciones
+4. Analizar tendencias
+5. Identificar mejoras
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Eficiencia | Tasa operativa | Tiempo Real / Tiempo Ideal | >90% |
+| Productividad | Output por recurso | Producción / Recursos | >1.2 |
+| Calidad | Tasa de calidad | Correctos / Total | >95% |
+| Costo | Costo por unidad | Costo Total / Unidades | -10% |
+| Satisfacción | Nivel de servicio | Promedio encuestas | >4.5/5 |
+
+## Hoja 7: Consultas Avanzadas
+1. Análisis de Eficiencia:
+   ```sql
+   SELECT 
+       proceso,
+       AVG(eficiencia) as eficiencia_media,
+       AVG(tiempo_respuesta) as tiempo_medio,
+       AVG(calidad) as calidad_media,
+       COUNT(*) as total_operaciones
+   FROM operaciones
+   WHERE fecha BETWEEN [FECHA_INICIO] AND [FECHA_FIN]
+   GROUP BY proceso
+   ORDER BY eficiencia_media DESC
+   ```
+
+2. Análisis de Recursos:
+   ```sql
+   SELECT 
+       tipo_recurso,
+       COUNT(*) as total_recursos,
+       AVG(disponibilidad) as disponibilidad_media,
+       AVG(utilizacion) as utilizacion_media,
+       AVG(costo_hora) as costo_medio
+   FROM recursos
+   WHERE fecha = [FECHA]
+   GROUP BY tipo_recurso
+   ORDER BY utilizacion_media DESC
+   ```
+
+3. Análisis de Costos:
+   ```sql
+   SELECT 
+       categoria,
+       periodo,
+       SUM(costo) as costo_total,
+       AVG(costo) as costo_medio,
+       (SUM(costo) - LAG(SUM(costo)) OVER (PARTITION BY categoria ORDER BY periodo)) / 
+       LAG(SUM(costo)) OVER (PARTITION BY categoria ORDER BY periodo) as variacion
+   FROM costos
+   GROUP BY categoria, periodo
+   ORDER BY periodo DESC, categoria
+   ```
+
+4. Análisis de Rendimiento:
+   ```sql
+   SELECT 
+       fecha,
+       proceso,
+       AVG(eficiencia) as eficiencia,
+       AVG(calidad) as calidad,
+       AVG(satisfaccion) as satisfaccion,
+       AVG(costo) as costo_medio
+   FROM operaciones
+   WHERE fecha >= DATE_SUB(NOW(), INTERVAL 30 DAY)
+   GROUP BY fecha, proceso
+   ORDER BY fecha DESC, eficiencia DESC
+   ```
+
+## Hoja 8: Registro de Seguimiento
+| Fecha | Área | Métrica | Valor | Acción |
+|-------|------|---------|-------|--------|
+| [FECHA] | Operaciones | Eficiencia | [VALOR] | [ACCION] |
+| [FECHA] | Recursos | Utilización | [VALOR] | [ACCION] |
+| [FECHA] | Costos | Variación | [VALOR] | [ACCION] |
+
+## Hoja 9: Mejores Prácticas
+1. Monitoreo:
+   - Establecer KPIs claros
+   - Definir umbrales
+   - Automatizar seguimiento
+   - Documentar anomalías
+
+2. Análisis:
+   - Usar métricas relevantes
+   - Validar datos
+   - Considerar contexto
+   - Identificar tendencias
+
+3. Optimización:
+   - Identificar mejoras
+   - Priorizar acciones
+   - Implementar cambios
+   - Medir resultados
+
+4. Reportes:
+   - Automatizar generación
+   - Mantener consistencia
+   - Incluir insights
+   - Compartir resultados
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - Sistema operativo
+   - ERP
+   - CRM
+   - Encuestas
+   - Registros
+
+2. Herramientas:
+   - DeepSeek
+   - Excel
+   - Power BI
+   - Tableau
+   - Python/R
+
+3. Plantillas:
+   - Dashboards
+   - Gráficos
+   - Reportes
+   - Alertas
+
+4. Contactos:
+   - Equipo operativo
+   - Gestión
+   - IT
+   - Proveedores 

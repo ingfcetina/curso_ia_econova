@@ -1,0 +1,151 @@
+# Plantilla de Optimización de Procesos - ChatGPT
+
+## Hoja 1: Mapeo de Procesos
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Proceso | Nombre del proceso | "Reserva de Viajes" | "Mapea el proceso de [Proceso] identificando pasos, responsables y tiempos." |
+| Objetivo | Meta del proceso | "Reducir tiempo de reserva" | "Define objetivos claros para optimizar [Proceso]." |
+| Entradas | Recursos necesarios | "Datos cliente, Disponibilidad" | "Identifica las entradas requeridas para [Proceso]." |
+| Salidas | Resultados esperados | "Reserva confirmada" | "Especifica las salidas deseadas de [Proceso]." |
+| Stakeholders | Involucrados | "Agentes, Clientes" | "Lista los stakeholders clave en [Proceso]." |
+
+## Hoja 2: Análisis de Tiempos
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Actividad | Paso del proceso | "Verificación de disponibilidad" | "Analiza el tiempo requerido para [Actividad]." |
+| Duración | Tiempo estimado | "30 minutos" | "Evalúa la duración actual de [Actividad]." |
+| Cuello de Botella | Punto de retraso | "Aprobación de pago" | "Identifica cuellos de botella en [Actividad]." |
+| Eficiencia | Tasa de eficiencia | "85%" | "Calcula la eficiencia de [Actividad]." |
+| Mejora Potencial | Optimización posible | "Automatización" | "Propón mejoras para [Actividad]." |
+
+## Hoja 3: Identificación de Mejoras
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Área | Departamento | "Ventas" | "Identifica áreas de mejora en [Área]." |
+| Problema | Issue específico | "Tiempo de respuesta" | "Analiza el problema de [Problema] en [Área]." |
+| Solución | Propuesta | "Chatbot" | "Genera soluciones para [Problema]." |
+| Impacto | Beneficio esperado | "Reducción 50% tiempo" | "Evalúa el impacto de [Solución]." |
+| Viabilidad | Factibilidad | "Alta" | "Analiza la viabilidad de [Solución]." |
+
+## Hoja 4: Plan de Implementación
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Fase | Etapa de implementación | "Piloto" | "Define las fases para implementar [Solución]." |
+| Tareas | Actividades específicas | "Configuración sistema" | "Lista las tareas necesarias para [Fase]." |
+| Responsable | Persona a cargo | "Gerente IT" | "Asigna responsables para [Tareas]." |
+| Timeline | Calendario | "Q2 2024" | "Establece timeline para [Fase]." |
+| Recursos | Necesidades | "Software, Capacitación" | "Identifica recursos para [Fase]." |
+
+## Hoja 5: Instrucciones
+1. Mapear proceso actual
+2. Analizar tiempos y eficiencia
+3. Identificar mejoras
+4. Planificar implementación
+5. Monitorear resultados
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Eficiencia | Tasa de eficiencia | Tiempo Real / Tiempo Ideal | >90% |
+| Tiempo | Tiempo de ciclo | Fin - Inicio | <24h |
+| Calidad | Tasa de errores | Errores / Total | <1% |
+| Costo | Costo por unidad | Costo Total / Unidades | -20% |
+| Satisfacción | Nivel de satisfacción | Promedio encuestas | >4.5/5 |
+
+## Hoja 7: Plantillas de Prompt
+1. Mapeo de Proceso:
+   "Mapea el proceso de [PROCESO] incluyendo:
+   - Pasos detallados
+   - Responsables
+   - Tiempos estimados
+   - Recursos necesarios
+   - Puntos de control
+   Nivel de detalle: [NIVEL]
+   Enfoque: [ENFOQUE]"
+
+2. Análisis de Eficiencia:
+   "Analiza la eficiencia de [PROCESO] considerando:
+   - Tiempos actuales
+   - Cuellos de botella
+   - Recursos utilizados
+   - Costos asociados
+   - Oportunidades de mejora
+   Métricas: [MÉTRICAS]
+   Perspectiva: [PERSPECTIVA]"
+
+3. Propuesta de Mejora:
+   "Genera una propuesta de mejora para [PROCESO] que incluya:
+   - Diagnóstico actual
+   - Soluciones propuestas
+   - Impacto esperado
+   - Recursos necesarios
+   - Plan de implementación
+   Alcance: [ALCANCE]
+   Prioridad: [PRIORIDAD]"
+
+4. Plan de Implementación:
+   "Crea un plan de implementación para [MEJORA] con:
+   - Fases de implementación
+   - Tareas específicas
+   - Responsables
+   - Timeline
+   - Métricas de éxito
+   Recursos: [RECURSOS]
+   Riesgos: [RIESGOS]"
+
+## Hoja 8: Registro de Mejoras
+| Fecha | Proceso | Mejora | Impacto | Estado |
+|-------|---------|--------|---------|--------|
+| [FECHA] | Reservas | Automatización | +30% eficiencia | Implementado |
+| [FECHA] | Atención | Chatbot | -40% tiempo | En proceso |
+| [FECHA] | Pagos | Sistema nuevo | -50% errores | Planificado |
+
+## Hoja 9: Mejores Prácticas
+1. Análisis:
+   - Documentar proceso actual
+   - Medir tiempos reales
+   - Identificar ineficiencias
+   - Validar con stakeholders
+
+2. Diseño:
+   - Definir objetivos claros
+   - Considerar restricciones
+   - Evaluar alternativas
+   - Validar viabilidad
+
+3. Implementación:
+   - Comunicar cambios
+   - Capacitar equipo
+   - Monitorear progreso
+   - Ajustar según necesidad
+
+4. Seguimiento:
+   - Medir resultados
+   - Recopilar feedback
+   - Ajustar mejoras
+   - Documentar aprendizajes
+
+## Hoja 10: Recursos
+1. Herramientas:
+   - Software de mapeo
+   - Analizadores de tiempo
+   - Sistemas de seguimiento
+   - Herramientas de colaboración
+
+2. Plantillas:
+   - Diagramas de flujo
+   - Formatos de análisis
+   - Planes de proyecto
+   - Reportes de seguimiento
+
+3. Capacitación:
+   - Materiales de entrenamiento
+   - Guías de usuario
+   - Videos tutoriales
+   - Documentación técnica
+
+4. Contactos:
+   - Equipo de proceso
+   - Stakeholders
+   - Proveedores
+   - Consultores 

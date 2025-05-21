@@ -1,0 +1,161 @@
+# Plantilla de Análisis de Tendencias - Claude
+
+## Hoja 1: Identificación de Tendencias
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Categoría | Área | "Tecnología" | "Identifica tendencias emergentes en [CATEGORIA]." |
+| Tema | Específico | "IA" | "Analiza el desarrollo de [TEMA] en el sector turístico." |
+| Impacto | Nivel | "Alto" | "Evalúa el impacto potencial de [TEMA]." |
+| Temporalidad | Horizonte | "Corto" | "Proyecta la evolución de [TEMA] en [TIEMPO]." |
+| Fuente | Origen | "Investigación" | "Valida la tendencia [TEMA] con [FUENTE]." |
+
+## Hoja 2: Análisis de Mercado
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Segmento | Mercado | "Lujo" | "Analiza tendencias en el segmento [SEGMENTO]." |
+| Demanda | Comportamiento | "Personalización" | "Evalúa cambios en la demanda de [SEGMENTO]." |
+| Oferta | Adaptación | "Digital" | "Analiza la adaptación de la oferta a [TENDENCIA]." |
+| Competencia | Respuesta | "Innovación" | "Evalúa la respuesta competitiva a [TENDENCIA]." |
+| Regulación | Marco | "Nuevo" | "Analiza el impacto regulatorio en [TENDENCIA]." |
+
+## Hoja 3: Análisis de Impacto
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Operaciones | Efecto | "Eficiencia" | "Evalúa el impacto en operaciones de [TENDENCIA]." |
+| Clientes | Experiencia | "Mejora" | "Analiza el efecto en experiencia de [TENDENCIA]." |
+| Negocio | Modelo | "Transformación" | "Evalúa el impacto en el modelo de [TENDENCIA]." |
+| Tecnología | Requerimientos | "Nuevos" | "Analiza necesidades tecnológicas de [TENDENCIA]." |
+| Recursos | Necesidades | "Capacitación" | "Evalúa requerimientos de recursos para [TENDENCIA]." |
+
+## Hoja 4: Plan de Adaptación
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Estrategia | Enfoque | "Innovación" | "Define estrategia para adoptar [TENDENCIA]." |
+| Acciones | Específicas | "Implementación" | "Propón acciones para [TENDENCIA]." |
+| Recursos | Necesarios | "Inversión" | "Identifica recursos para [TENDENCIA]." |
+| Timeline | Plazos | "6 meses" | "Establece cronograma para [TENDENCIA]." |
+| Métricas | Seguimiento | "KPIs" | "Define métricas para [TENDENCIA]." |
+
+## Hoja 5: Instrucciones
+1. Identificar tendencias
+2. Analizar mercado
+3. Evaluar impacto
+4. Planificar adaptación
+5. Implementar cambios
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Adopción | Tasa | Usuarios nuevos / Total | >30% |
+| Impacto | Negocio | Ingresos nuevos / Total | >20% |
+| Eficiencia | Operativa | Tiempo ahorrado / Total | >25% |
+| Satisfacción | Cliente | Promedio evaluación | >4.5 |
+| ROI | Inversión | Beneficios / Costos | >2.0 |
+
+## Hoja 7: Plantillas de Prompt
+1. Identificación de Tendencias:
+   ```
+   Analiza tendencias en [CATEGORIA]:
+   - Tendencias emergentes
+   - Patrones de cambio
+   - Factores impulsores
+   - Impacto potencial
+   - Horizonte temporal
+   Área: [AREA]
+   Período: [PERIODO]
+   ```
+
+2. Análisis de Mercado:
+   ```
+   Evalúa el mercado para [TENDENCIA]:
+   - Tamaño y crecimiento
+   - Segmentación
+   - Comportamiento
+   - Competencia
+   - Regulación
+   Segmento: [SEGMENTO]
+   Región: [REGION]
+   ```
+
+3. Análisis de Impacto:
+   ```
+   Analiza el impacto de [TENDENCIA]:
+   - Operaciones
+   - Clientes
+   - Negocio
+   - Tecnología
+   - Recursos
+   Área: [AREA]
+   Horizonte: [TIEMPO]
+   ```
+
+4. Plan de Adaptación:
+   ```
+   Genera plan para [TENDENCIA]:
+   - Diagnóstico actual
+   - Objetivos
+   - Acciones
+   - Recursos
+   - Timeline
+   - Métricas
+   Prioridad: [PRIORIDAD]
+   Recursos: [RECURSOS]
+   ```
+
+## Hoja 8: Registro de Tendencias
+| Fecha | Tendencia | Categoría | Impacto | Acciones |
+|-------|-----------|-----------|---------|----------|
+| [FECHA] | [TENDENCIA] | [CATEGORIA] | [IMPACTO] | [ACCIONES] |
+| [FECHA] | [TENDENCIA] | [CATEGORIA] | [IMPACTO] | [ACCIONES] |
+| [FECHA] | [TENDENCIA] | [CATEGORIA] | [IMPACTO] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Identificación:
+   - Monitorear fuentes
+   - Validar tendencias
+   - Evaluar relevancia
+   - Documentar hallazgos
+
+2. Análisis:
+   - Ser objetivo
+   - Considerar contexto
+   - Evaluar impacto
+   - Validar conclusiones
+
+3. Planificación:
+   - Definir objetivos
+   - Priorizar acciones
+   - Asignar recursos
+   - Establecer plazos
+
+4. Implementación:
+   - Monitorear cambios
+   - Ajustar plan
+   - Medir resultados
+   - Documentar aprendizajes
+
+## Hoja 10: Recursos
+1. Fuentes:
+   - Investigaciones
+   - Publicaciones
+   - Conferencias
+   - Redes profesionales
+   - Foros
+
+2. Herramientas:
+   - Analizadores de datos
+   - Monitores de tendencias
+   - Herramientas de proyección
+   - Plataformas de colaboración
+
+3. Plantillas:
+   - Formatos de análisis
+   - Reportes
+   - Planes de acción
+   - Seguimiento
+
+4. Contactos:
+   - Expertos
+   - Consultores
+   - Stakeholders
+   - Proveedores 

@@ -1,0 +1,149 @@
+# Plantilla de Análisis de Reseñas - ChatGPT
+
+## Hoja 1: Recopilación de Reseñas
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| ID Reseña | Identificador único | "RES001" | "Analiza la reseña [ID] y extrae: sentimiento, categorías, puntos clave." |
+| Fuente | Plataforma origen | "TripAdvisor" | "Procesa la reseña de [Fuente] identificando patrones y tendencias." |
+| Fecha | Fecha de publicación | "2024-03-15" | "Analiza reseñas del período [Fecha] para identificar tendencias temporales." |
+| Contenido | Texto de la reseña | "Excelente servicio..." | "Extrae insights clave de la reseña: [Contenido]" |
+| Calificación | Puntuación numérica | "4.5/5" | "Correlaciona la calificación [Valor] con el contenido de la reseña." |
+
+## Hoja 2: Análisis de Sentimiento
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Sentimiento | Clasificación | "Positivo" | "Clasifica el sentimiento de la reseña en: positivo, neutral, negativo." |
+| Intensidad | Nivel de sentimiento | "Alto" | "Evalúa la intensidad del sentimiento en una escala de 1-5." |
+| Aspectos | Elementos evaluados | "Servicio, Limpieza" | "Identifica los aspectos mencionados y su evaluación." |
+| Palabras Clave | Términos relevantes | "amable, rápido" | "Extrae palabras clave que indican sentimiento." |
+| Tono | Estilo de comunicación | "Entusiasta" | "Analiza el tono general de la reseña." |
+
+## Hoja 3: Tendencias y Patrones
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Categoría | Tipo de feedback | "Servicio" | "Agrupa reseñas por categoría y analiza patrones." |
+| Frecuencia | Repetición de temas | "Alta" | "Identifica temas recurrentes en las reseñas." |
+| Temporalidad | Patrón temporal | "Estacional" | "Analiza patrones temporales en las reseñas." |
+| Correlación | Relación entre aspectos | "Servicio-Precio" | "Identifica correlaciones entre diferentes aspectos." |
+| Tendencias | Cambios en el tiempo | "Mejora" | "Analiza tendencias en las evaluaciones." |
+
+## Hoja 4: Plan de Acción
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Área | Departamento | "Atención al Cliente" | "Genera recomendaciones para mejorar [Área]." |
+| Prioridad | Nivel de importancia | "Alta" | "Prioriza acciones basadas en el análisis." |
+| Acción | Medida específica | "Capacitación" | "Propón acciones concretas para [Área]." |
+| Responsable | Persona a cargo | "Gerente" | "Asigna responsables para cada acción." |
+| Seguimiento | Métrica de control | "Satisfacción" | "Define métricas para medir el impacto." |
+
+## Hoja 5: Instrucciones
+1. Recopilar reseñas de todas las fuentes
+2. Clasificar y categorizar el contenido
+3. Analizar sentimiento y patrones
+4. Generar insights accionables
+5. Implementar y dar seguimiento
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| NPS | Net Promoter Score | Promotores - Detractores | >50 |
+| Satisfacción | Calificación promedio | Suma calificaciones / Total | >4.0 |
+| Volumen | Número de reseñas | Conteo mensual | >100 |
+| Respuesta | Tiempo de respuesta | Promedio días | <24h |
+| Mejora | Cambio en calificaciones | (Actual - Anterior) / Anterior | >5% |
+
+## Hoja 7: Plantillas de Prompt
+1. Análisis Individual:
+   "Analiza la siguiente reseña:
+   [RESEÑA]
+   Extrae:
+   - Sentimiento general
+   - Aspectos mencionados
+   - Puntos clave
+   - Recomendaciones
+   - Acciones sugeridas"
+
+2. Análisis de Tendencias:
+   "Analiza el conjunto de reseñas:
+   [RESEÑAS]
+   Identifica:
+   - Patrones comunes
+   - Tendencias temporales
+   - Correlaciones
+   - Áreas de mejora
+   - Oportunidades"
+
+3. Generación de Insights:
+   "Basado en el análisis de [N] reseñas:
+   - Resume hallazgos principales
+   - Identifica áreas críticas
+   - Propón acciones específicas
+   - Establece prioridades
+   - Define métricas de seguimiento"
+
+4. Plan de Mejora:
+   "Genera un plan de acción para [ÁREA]:
+   - Diagnóstico actual
+   - Objetivos de mejora
+   - Acciones específicas
+   - Responsables
+   - Timeline
+   - Métricas de éxito"
+
+## Hoja 8: Registro de Análisis
+| Fecha | Tipo | Muestra | Hallazgos | Acciones |
+|-------|------|---------|-----------|----------|
+| [FECHA] | Mensual | 100 reseñas | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Trimestral | 300 reseñas | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Anual | 1200 reseñas | [HALLAZGOS] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Recopilación:
+   - Usar múltiples fuentes
+   - Mantener consistencia
+   - Validar datos
+   - Documentar fuentes
+
+2. Análisis:
+   - Usar categorías claras
+   - Mantener objetividad
+   - Considerar contexto
+   - Validar patrones
+
+3. Acción:
+   - Priorizar por impacto
+   - Asignar responsables
+   - Establecer plazos
+   - Medir resultados
+
+4. Seguimiento:
+   - Monitorear cambios
+   - Ajustar acciones
+   - Documentar mejoras
+   - Compartir aprendizajes
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - TripAdvisor
+   - Google Reviews
+   - Booking.com
+   - Expedia
+   - Redes sociales
+
+2. Herramientas:
+   - Analizadores de texto
+   - Visualizadores
+   - Trackers de métricas
+   - Gestores de tareas
+
+3. Plantillas:
+   - Formatos de análisis
+   - Reportes
+   - Planes de acción
+   - Seguimiento
+
+4. Contactos:
+   - Equipo de análisis
+   - Responsables de área
+   - Stakeholders
+   - Proveedores 

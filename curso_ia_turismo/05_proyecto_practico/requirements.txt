@@ -1,0 +1,45 @@
+# Procesamiento de datos
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+python-dotenv>=1.0.0
+
+# Análisis y visualización
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+dash>=2.9.0
+jupyter>=1.0.0
+
+# APIs de IA
+openai>=1.0.0
+anthropic>=0.5.0
+deepseek-ai>=0.1.0
+
+# Procesamiento de texto
+nltk>=3.8.0
+spacy>=3.5.0
+textblob>=0.17.0
+
+# Web scraping y APIs
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+selenium>=4.10.0
+
+# Base de datos
+sqlalchemy>=2.0.0
+pymongo>=4.4.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Documentación
+sphinx>=7.1.0
+mkdocs>=1.4.0
+
+# Utilidades
+pyyaml>=6.0.0
+python-dateutil>=2.8.0
+tqdm>=4.65.0
+loguru>=0.7.0 

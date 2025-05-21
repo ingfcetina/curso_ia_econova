@@ -1,0 +1,31 @@
+id,fecha,texto,valoracion,categoria,origen,idioma,tipo_cliente
+1,2024-03-01,"Excelente servicio y atención al cliente. Las instalaciones están impecables y la ubicación es perfecta.",5,hotel,TripAdvisor,es,business
+2,2024-03-02,"Buen hotel pero la limpieza podría mejorar. El personal es muy amable.",4,hotel,Booking,es,leisure
+3,2024-03-03,"La comida del restaurante es espectacular, aunque los precios son un poco altos.",4,restaurante,Google,en,business
+4,2024-03-04,"Muy decepcionante la atención. Las habitaciones necesitan renovación.",2,hotel,TripAdvisor,es,family
+5,2024-03-05,"Increíble experiencia. El tour guiado fue muy informativo y el guía muy profesional.",5,tour,Google,en,leisure
+6,2024-03-06,"El spa es relajante pero los precios son excesivos. El personal es muy atento.",3,spa,Booking,es,business
+7,2024-03-07,"Excelente ubicación y vistas. El desayuno incluido es muy completo.",5,hotel,TripAdvisor,es,family
+8,2024-03-08,"La piscina está sucia y el servicio de limpieza es lento.",2,hotel,Google,es,leisure
+9,2024-03-09,"El restaurante tiene una carta muy variada y la calidad es excelente.",5,restaurante,Booking,en,business
+10,2024-03-10,"El tour fue muy básico y corto para el precio que tiene.",3,tour,TripAdvisor,es,family
+11,2024-03-11,"Las instalaciones del spa son modernas pero faltan más opciones de tratamientos.",4,spa,Google,en,leisure
+12,2024-03-12,"El personal es muy servicial y las habitaciones son cómodas.",4,hotel,Booking,es,business
+13,2024-03-13,"La comida es buena pero el servicio es muy lento.",3,restaurante,TripAdvisor,es,family
+14,2024-03-14,"Excelente tour con guía local. Muy recomendable.",5,tour,Google,en,leisure
+15,2024-03-15,"El spa tiene tratamientos únicos y el personal es muy profesional.",5,spa,Booking,es,business
+16,2024-03-16,"Las habitaciones son pequeñas pero limpias. Buena relación calidad-precio.",4,hotel,TripAdvisor,es,family
+17,2024-03-17,"El restaurante tiene una vista increíble pero la comida es regular.",3,restaurante,Google,en,leisure
+18,2024-03-18,"El tour incluye demasiadas paradas comerciales.",2,tour,Booking,es,business
+19,2024-03-19,"El spa tiene una decoración relajante y los masajes son excelentes.",5,spa,TripAdvisor,es,family
+20,2024-03-20,"El hotel está bien ubicado pero necesita mantenimiento.",3,hotel,Google,en,leisure
+21,2024-03-21,"La comida es deliciosa y el servicio es impecable.",5,restaurante,Booking,es,business
+22,2024-03-22,"El tour es muy completo y el guía explica todo con detalle.",5,tour,TripAdvisor,es,family
+23,2024-03-23,"El spa tiene precios accesibles y buena calidad.",4,spa,Google,en,leisure
+24,2024-03-24,"Las habitaciones son amplias y cómodas. Excelente servicio.",5,hotel,Booking,es,business
+25,2024-03-25,"El restaurante tiene opciones vegetarianas muy buenas.",4,restaurante,TripAdvisor,es,family
+26,2024-03-26,"El tour es muy turístico y masificado.",2,tour,Google,en,leisure
+27,2024-03-27,"El spa tiene tratamientos innovadores y el personal es muy atento.",5,spa,Booking,es,business
+28,2024-03-28,"El hotel tiene un diseño moderno pero las habitaciones son ruidosas.",3,hotel,TripAdvisor,es,family
+29,2024-03-29,"La comida es auténtica y los precios son razonables.",4,restaurante,Google,en,leisure
+30,2024-03-30,"El tour incluye lugares poco conocidos y muy interesantes.",5,tour,Booking,es,business 

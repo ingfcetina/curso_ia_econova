@@ -1,0 +1,170 @@
+# Plantilla de Gestión de Contenido - Claude
+
+## Hoja 1: Descripciones de Destinos
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Destino | Nombre | "París" | "Genera una descripción detallada de [DESTINO] incluyendo: atracciones principales, mejor época para visitar, consejos de viaje y recomendaciones locales." |
+| Tipo | Categoría | "Ciudad" | "Crea una descripción enfocada en [TIPO] para [DESTINO], destacando sus características únicas y experiencias típicas." |
+| Público | Objetivo | "Familias" | "Escribe una descripción de [DESTINO] orientada a [PUBLICO], enfatizando actividades y servicios relevantes." |
+| Duración | Recomendada | "5 días" | "Genera un itinerario de [DURACION] para [DESTINO], incluyendo actividades diarias y recomendaciones." |
+| Presupuesto | Rango | "Medio" | "Crea una guía de presupuesto [PRESUPUESTO] para [DESTINO], incluyendo opciones de alojamiento, comida y actividades." |
+
+## Hoja 2: Itinerarios
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Tipo | Ruta | "Cultural" | "Genera un itinerario [TIPO] para [DESTINO] de [DURACION] días." |
+| Duración | Días | "7" | "Crea un itinerario detallado de [DURACION] días para [DESTINO]." |
+| Actividades | Principales | "Museos" | "Incluye actividades [ACTIVIDADES] en el itinerario para [DESTINO]." |
+| Presupuesto | Nivel | "Premium" | "Adapta el itinerario a un presupuesto [PRESUPUESTO]." |
+| Preferencias | Cliente | "Gastronomía" | "Personaliza el itinerario según las preferencias: [PREFERENCIAS]." |
+
+## Hoja 3: Material Promocional
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Tipo | Material | "Folletos" | "Genera el contenido para [TIPO] promocionando [PRODUCTO]." |
+| Público | Objetivo | "Premium" | "Crea contenido promocional para [TIPO] dirigido a [PUBLICO]." |
+| Elementos | Clave | "Lujo" | "Desarrolla el contenido destacando los elementos clave: [ELEMENTOS]." |
+| Oferta | Promoción | "20% descuento" | "Genera el texto promocional para [OFERTA], enfatizando beneficios." |
+| Tono | Comunicación | "Elegante" | "Escribe el contenido en tono [TONO] para [TIPO] de material." |
+
+## Hoja 4: Contenido Web
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Sección | Página | "Destinos" | "Genera contenido para la sección [SECCION] del sitio web." |
+| Tema | Principal | "Europa" | "Crea contenido sobre [TEMA] para la sección [SECCION]." |
+| Palabras | Clave | "viaje, cultura" | "Optimiza el contenido para las palabras clave: [PALABRAS]." |
+| Formato | Estructura | "Lista" | "Estructura el contenido en formato [FORMATO]." |
+| Llamada | Acción | "Reserva ahora" | "Incluye una llamada a la acción clara: [LLAMADA]." |
+
+## Hoja 5: Instrucciones
+1. Definir objetivos del contenido
+2. Seleccionar tipo de material
+3. Generar contenido con Claude
+4. Revisar y editar
+5. Publicar y monitorear
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Engagement | Interacción | Likes + Comentarios / Alcance | >5% |
+| Conversión | Reservas | Reservas / Visitas | >2% |
+| Tiempo | Lectura | Suma tiempos / Número lectores | >2 min |
+| Satisfacción | Calificación | Promedio calificaciones | >4/5 |
+| SEO | Posicionamiento | Ranking palabras clave | Top 10 |
+
+## Hoja 7: Plantillas de Prompt
+1. Descripción de Destino:
+   ```
+   Genera una descripción atractiva para [DESTINO] que incluya:
+   - Atracciones principales
+   - Mejor época para visitar
+   - Consejos de viaje
+   - Recomendaciones locales
+   - Información práctica
+   Tono: [TONO]
+   Público objetivo: [PUBLICO]
+   Longitud: [LONGITUD]
+   ```
+
+2. Itinerario Personalizado:
+   ```
+   Crea un itinerario para [DESTINO] con las siguientes características:
+   - Duración: [DURACION]
+   - Tipo: [TIPO]
+   - Presupuesto: [PRESUPUESTO]
+   - Preferencias: [PREFERENCIAS]
+   - Actividades especiales: [ACTIVIDADES]
+   Incluye:
+   - Itinerario diario
+   - Recomendaciones
+   - Consejos prácticos
+   - Opciones alternativas
+   ```
+
+3. Material Promocional:
+   ```
+   Genera contenido para [TIPO] de material promocional con:
+   - Público objetivo: [PUBLICO]
+   - Elementos clave: [ELEMENTOS]
+   - Oferta: [OFERTA]
+   - Tono: [TONO]
+   - Llamada a la acción: [LLAMADA]
+   Incluye:
+   - Título atractivo
+   - Beneficios principales
+   - Características destacadas
+   - Información de contacto
+   ```
+
+4. Contenido Web:
+   ```
+   Crea contenido para la sección [SECCION] del sitio web:
+   - Tema: [TEMA]
+   - Palabras clave: [PALABRAS]
+   - Formato: [FORMATO]
+   - Tono: [TONO]
+   - Llamada a la acción: [LLAMADA]
+   Incluye:
+   - Título SEO
+   - Introducción
+   - Contenido principal
+   - Conclusión
+   - Elementos multimedia sugeridos
+   ```
+
+## Hoja 8: Registro de Versiones
+| Fecha | Tipo | Cambios | Autor | Aprobado |
+|-------|------|---------|-------|----------|
+| [FECHA] | Destino | [CAMBIOS] | [AUTOR] | [APROBADOR] |
+| [FECHA] | Itinerario | [CAMBIOS] | [AUTOR] | [APROBADOR] |
+| [FECHA] | Promocional | [CAMBIOS] | [AUTOR] | [APROBADOR] |
+
+## Hoja 9: Mejores Prácticas
+1. Preparación:
+   - Definir objetivos
+   - Identificar público
+   - Seleccionar tono
+   - Establecer estructura
+
+2. Generación:
+   - Usar prompts claros
+   - Incluir ejemplos
+   - Mantener consistencia
+   - Validar información
+
+3. Revisión:
+   - Verificar precisión
+   - Ajustar tono
+   - Optimizar SEO
+   - Validar llamadas a la acción
+
+4. Publicación:
+   - Programar contenido
+   - Monitorear resultados
+   - Recopilar feedback
+   - Iterar y mejorar
+
+## Hoja 10: Recursos
+1. Guías:
+   - Manual de marca
+   - Guía de estilo
+   - Paleta de colores
+   - Tipografía
+
+2. Ejemplos:
+   - Casos de éxito
+   - Plantillas base
+   - Referencias
+   - Inspiración
+
+3. Herramientas:
+   - Editores de texto
+   - Generadores de imágenes
+   - Analizadores SEO
+   - Calendarios editoriales
+
+4. Contactos:
+   - Equipo de contenido
+   - Diseñadores
+   - Revisores
+   - Aprobadores 

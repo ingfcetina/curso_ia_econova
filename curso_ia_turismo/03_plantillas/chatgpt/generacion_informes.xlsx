@@ -1,0 +1,153 @@
+# Plantilla de Generación de Informes - ChatGPT
+
+## Hoja 1: Datos de Ventas
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Período | Rango de fechas | "Q1 2024" | "Genera un análisis de ventas para el período [Período]." |
+| Producto | Servicio/Destino | "Paquete Europa" | "Analiza el desempeño de [Producto] en términos de ventas y rentabilidad." |
+| Métricas | KPIs principales | "Ingresos, Margen" | "Calcula y analiza las métricas clave: [Métricas]." |
+| Tendencias | Patrones de venta | "Estacional" | "Identifica tendencias en las ventas de [Producto]." |
+| Comparativa | Año anterior | "2023" | "Compara el desempeño actual con [Período Comparativo]." |
+
+## Hoja 2: Métricas de Clientes
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Segmento | Grupo de clientes | "Premium" | "Analiza el comportamiento del segmento [Segmento]." |
+| Comportamiento | Patrones de compra | "Frecuente" | "Identifica patrones de comportamiento en [Segmento]." |
+| Satisfacción | Nivel de satisfacción | "4.5/5" | "Evalúa la satisfacción del cliente en [Segmento]." |
+| Retención | Tasa de retención | "85%" | "Analiza la retención de clientes en [Segmento]." |
+| Valor | Valor del cliente | "LTV" | "Calcula el valor del cliente para [Segmento]." |
+
+## Hoja 3: Análisis de Mercado
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Mercado | Segmento de mercado | "Europa" | "Analiza el mercado [Mercado] y sus tendencias." |
+| Competencia | Análisis competitivo | "Top 5" | "Evalúa la posición competitiva en [Mercado]." |
+| Oportunidades | Áreas de crecimiento | "Nuevos destinos" | "Identifica oportunidades en [Mercado]." |
+| Amenazas | Riesgos potenciales | "Cambios regulatorios" | "Analiza amenazas en [Mercado]." |
+| Tendencias | Patrones de mercado | "Sostenibilidad" | "Identifica tendencias emergentes en [Mercado]." |
+
+## Hoja 4: Plantillas de Informes
+| Campo | Descripción | Ejemplo | Prompt Sugerido |
+|-------|-------------|---------|-----------------|
+| Tipo | Categoría de informe | "Mensual" | "Genera un informe [Tipo] con el siguiente formato." |
+| Secciones | Estructura | "Resumen, Análisis" | "Crea un informe con las secciones: [Secciones]." |
+| Formato | Estilo de presentación | "Ejecutivo" | "Presenta el informe en formato [Formato]." |
+| Visualización | Elementos gráficos | "Gráficos, Tablas" | "Incluye visualizaciones para [Datos]." |
+| Acciones | Recomendaciones | "Estratégicas" | "Genera recomendaciones basadas en [Análisis]." |
+
+## Hoja 5: Instrucciones
+1. Recopilar datos de todas las fuentes
+2. Validar y limpiar información
+3. Generar análisis y visualizaciones
+4. Crear informe estructurado
+5. Revisar y distribuir
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Crecimiento | Tasa de crecimiento | (Actual - Anterior) / Anterior | >10% |
+| Rentabilidad | Margen operativo | EBIT / Ventas | >20% |
+| Eficiencia | ROI | Beneficio / Inversión | >15% |
+| Cuota | Participación de mercado | Ventas Propias / Total Mercado | >5% |
+| Satisfacción | NPS | Promotores - Detractores | >50 |
+
+## Hoja 7: Plantillas de Prompt
+1. Informe de Ventas:
+   "Genera un informe de ventas para [PERÍODO] que incluya:
+   - Resumen ejecutivo
+   - Análisis de ventas por producto
+   - Tendencias y patrones
+   - Comparativa con períodos anteriores
+   - Recomendaciones estratégicas
+   Formato: [FORMATO]
+   Nivel de detalle: [NIVEL]"
+
+2. Análisis de Clientes:
+   "Crea un análisis de clientes para [SEGMENTO] que contenga:
+   - Perfil del segmento
+   - Comportamiento de compra
+   - Métricas de satisfacción
+   - Tendencias de retención
+   - Oportunidades de mejora
+   Enfoque: [ENFOQUE]
+   Visualización: [TIPO]"
+
+3. Informe de Mercado:
+   "Elabora un informe de mercado para [MERCADO] con:
+   - Análisis de la situación actual
+   - Evaluación competitiva
+   - Tendencias emergentes
+   - Oportunidades y amenazas
+   - Recomendaciones estratégicas
+   Perspectiva: [PERSPECTIVA]
+   Alcance: [ALCANCE]"
+
+4. Informe Ejecutivo:
+   "Genera un informe ejecutivo que incluya:
+   - Resumen de resultados
+   - KPIs principales
+   - Hallazgos clave
+   - Acciones recomendadas
+   - Próximos pasos
+   Audiencia: [AUDIENCIA]
+   Formato: [FORMATO]"
+
+## Hoja 8: Registro de Informes
+| Fecha | Tipo | Alcance | Destinatarios | Estado |
+|-------|------|---------|---------------|--------|
+| [FECHA] | Mensual | Ventas | Dirección | Completado |
+| [FECHA] | Trimestral | Clientes | Marketing | En proceso |
+| [FECHA] | Anual | Mercado | Junta | Pendiente |
+
+## Hoja 9: Mejores Prácticas
+1. Preparación:
+   - Definir objetivos
+   - Identificar fuentes
+   - Establecer métricas
+   - Planificar estructura
+
+2. Análisis:
+   - Validar datos
+   - Usar métodos consistentes
+   - Considerar contexto
+   - Identificar patrones
+
+3. Presentación:
+   - Mantener claridad
+   - Usar visualizaciones
+   - Incluir insights
+   - Proponer acciones
+
+4. Distribución:
+   - Seleccionar formato
+   - Definir audiencia
+   - Establecer frecuencia
+   - Recopilar feedback
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - CRM
+   - Sistema de ventas
+   - Encuestas
+   - Estudios de mercado
+   - Análisis web
+
+2. Herramientas:
+   - Excel
+   - Power BI
+   - Tableau
+   - Google Analytics
+   - Herramientas de BI
+
+3. Plantillas:
+   - Formatos de informe
+   - Gráficos
+   - Tablas
+   - Dashboards
+
+4. Contactos:
+   - Equipo de análisis
+   - Stakeholders
+   - Proveedores
+   - Consultores 

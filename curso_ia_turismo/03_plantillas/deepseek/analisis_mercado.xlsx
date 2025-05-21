@@ -1,0 +1,169 @@
+# Plantilla de Análisis de Mercado - DeepSeek
+
+## Hoja 1: Datos de Mercado
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Mercado | Segmento | "Europa" | "SELECT * FROM mercado WHERE segmento = [SEGMENTO]" |
+| Tamaño | Volumen | "1000M€" | "SELECT SUM(tamano) FROM mercado WHERE segmento = [SEGMENTO]" |
+| Crecimiento | Tasa | "5%" | "SELECT AVG(crecimiento) FROM mercado WHERE segmento = [SEGMENTO]" |
+| Estacionalidad | Patrón | "Alta" | "SELECT estacionalidad, COUNT(*) FROM mercado GROUP BY estacionalidad" |
+| Tendencia | Dirección | "Ascendente" | "SELECT tendencia, COUNT(*) FROM mercado GROUP BY tendencia" |
+
+## Hoja 2: Análisis Competitivo
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Competidor | Nombre | "Agencia X" | "SELECT * FROM competidores WHERE nombre = [NOMBRE]" |
+| Cuota | Mercado | "15%" | "SELECT AVG(cuota) FROM competidores WHERE segmento = [SEGMENTO]" |
+| Productos | Oferta | "Paquetes" | "SELECT producto, COUNT(*) FROM competidores GROUP BY producto" |
+| Precios | Rango | "1000-2000€" | "SELECT AVG(precio) FROM competidores WHERE producto = [PRODUCTO]" |
+| Diferenciación | Factor | "Servicio" | "SELECT factor, COUNT(*) FROM competidores GROUP BY factor" |
+
+## Hoja 3: Oportunidades
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Área | Sector | "Digital" | "SELECT area, COUNT(*) FROM oportunidades GROUP BY area" |
+| Potencial | Valor | "500M€" | "SELECT SUM(potencial) FROM oportunidades WHERE area = [AREA]" |
+| Viabilidad | Probabilidad | "80%" | "SELECT AVG(viabilidad) FROM oportunidades WHERE area = [AREA]" |
+| Tiempo | Implementación | "6 meses" | "SELECT AVG(tiempo) FROM oportunidades WHERE area = [AREA]" |
+| Recursos | Necesarios | "Equipo" | "SELECT recurso, COUNT(*) FROM oportunidades GROUP BY recurso" |
+
+## Hoja 4: Amenazas
+| Campo | Descripción | Ejemplo | Consulta Sugerida |
+|-------|-------------|---------|------------------|
+| Tipo | Categoría | "Competitiva" | "SELECT tipo, COUNT(*) FROM amenazas GROUP BY tipo" |
+| Impacto | Nivel | "Alto" | "SELECT AVG(impacto) FROM amenazas WHERE tipo = [TIPO]" |
+| Probabilidad | Ocurrencia | "30%" | "SELECT AVG(probabilidad) FROM amenazas WHERE tipo = [TIPO]" |
+| Tiempo | Horizonte | "1 año" | "SELECT AVG(tiempo) FROM amenazas WHERE tipo = [TIPO]" |
+| Mitigación | Acción | "Diversificación" | "SELECT accion, COUNT(*) FROM amenazas GROUP BY accion" |
+
+## Hoja 5: Instrucciones
+1. Recopilar datos de mercado
+2. Analizar competencia
+3. Identificar oportunidades
+4. Evaluar amenazas
+5. Generar insights
+
+## Hoja 6: Métricas
+| Métrica | Descripción | Fórmula | Objetivo |
+|---------|-------------|---------|----------|
+| Cuota | Participación | Ventas Propias / Total Mercado | >5% |
+| Crecimiento | Tasa | (Actual - Anterior) / Anterior | >10% |
+| Rentabilidad | Margen | (Ventas - Costos) / Ventas | >20% |
+| Eficiencia | ROI | Beneficio / Inversión | >15% |
+| Posicionamiento | Ranking | Posición en mercado | Top 3 |
+
+## Hoja 7: Consultas Avanzadas
+1. Análisis de Mercado:
+   ```sql
+   SELECT 
+       segmento,
+       SUM(tamano) as tamano_total,
+       AVG(crecimiento) as crecimiento_medio,
+       COUNT(*) as numero_empresas,
+       AVG(cuota) as cuota_media
+   FROM mercado
+   WHERE fecha = [FECHA]
+   GROUP BY segmento
+   ORDER BY tamano_total DESC
+   ```
+
+2. Análisis Competitivo:
+   ```sql
+   SELECT 
+       competidor,
+       AVG(cuota) as cuota_media,
+       COUNT(DISTINCT producto) as numero_productos,
+       AVG(precio) as precio_medio,
+       AVG(satisfaccion) as satisfaccion_media
+   FROM competidores
+   WHERE segmento = [SEGMENTO]
+   GROUP BY competidor
+   ORDER BY cuota_media DESC
+   ```
+
+3. Análisis de Oportunidades:
+   ```sql
+   SELECT 
+       area,
+       SUM(potencial) as potencial_total,
+       AVG(viabilidad) as viabilidad_media,
+       AVG(tiempo) as tiempo_medio,
+       COUNT(*) as numero_oportunidades
+   FROM oportunidades
+   WHERE fecha >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+   GROUP BY area
+   ORDER BY potencial_total DESC
+   ```
+
+4. Análisis de Amenazas:
+   ```sql
+   SELECT 
+       tipo,
+       AVG(impacto) as impacto_medio,
+       AVG(probabilidad) as probabilidad_media,
+       AVG(tiempo) as tiempo_medio,
+       COUNT(*) as numero_amenazas
+   FROM amenazas
+   WHERE fecha >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+   GROUP BY tipo
+   ORDER BY impacto_medio * probabilidad_media DESC
+   ```
+
+## Hoja 8: Registro de Análisis
+| Fecha | Tipo | Alcance | Hallazgos | Acciones |
+|-------|------|---------|-----------|----------|
+| [FECHA] | Mensual | Mercado | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Trimestral | Competencia | [HALLAZGOS] | [ACCIONES] |
+| [FECHA] | Anual | Estratégico | [HALLAZGOS] | [ACCIONES] |
+
+## Hoja 9: Mejores Prácticas
+1. Recopilación:
+   - Usar fuentes confiables
+   - Validar datos
+   - Actualizar regularmente
+   - Documentar fuentes
+
+2. Análisis:
+   - Usar métricas relevantes
+   - Considerar contexto
+   - Validar tendencias
+   - Documentar hallazgos
+
+3. Estrategia:
+   - Identificar oportunidades
+   - Evaluar amenazas
+   - Priorizar acciones
+   - Definir objetivos
+
+4. Implementación:
+   - Desarrollar planes
+   - Asignar recursos
+   - Monitorear resultados
+   - Ajustar estrategia
+
+## Hoja 10: Recursos
+1. Fuentes de Datos:
+   - Estudios de mercado
+   - Informes sectoriales
+   - Análisis competitivo
+   - Encuestas
+   - Estadísticas
+
+2. Herramientas:
+   - DeepSeek
+   - Excel
+   - Power BI
+   - Tableau
+   - Python/R
+
+3. Plantillas:
+   - Análisis de mercado
+   - Matrices competitivas
+   - Planes estratégicos
+   - Reportes
+
+4. Contactos:
+   - Equipo de análisis
+   - Consultores
+   - Proveedores
+   - Stakeholders 
