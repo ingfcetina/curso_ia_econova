@@ -1,7 +1,7 @@
 # Curso Práctico de IA para Agencias de Viajes 🚀
 
 ## Descripción
-Este curso intensivo de 8 horas está diseñado específicamente para profesionales del sector turístico que desean implementar soluciones de Inteligencia Artificial en sus operaciones diarias. Utilizando la metodología "Learning by Doing" y el aprendizaje basado en retos, los participantes aprenderán a aprovechar las herramientas más avanzadas de IA para potenciar su negocio. El curso se dicta en 8 horas, se incluye el cobro de dos docentes y se detalla el desglose de ingresos (consulte la [Propuesta Económica](curso_ia_turismo/05_proyecto_practico/propuesta.md)).
+Este curso intensivo de 8 horas está diseñado específicamente para profesionales del sector turístico que desean implementar soluciones de Inteligencia Artificial en sus operaciones diarias. Utilizando la metodología "Learning by Doing" y el aprendizaje basado en retos, los participantes aprenderán a aprovechar las herramientas más avanzadas de IA para potenciar su negocio. El curso se dicta en 8 horas, se incluye el cobro de dos docentes y se detalla el desglose de ingresos (consulte la [Propuesta Económica](propuesta.md)).
 
 ## Objetivos del Curso
 - Comprender los fundamentos de los LLMs (Large Language Models)
